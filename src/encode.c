@@ -10,7 +10,7 @@ int main(int argc, char* argv[]) {
     shift = atoi(argv[2]) % 26;
     if (shift < 0) shift += 26;
     while (n = fread(buffer, sizeof(*buffer), 100, stdin)) {
-        for (i = 0; i < 100; ++i) {
+        for (i = 0; i < n; ++i) {
             if (buffer[i] >= 'a' && buffer[i] <= 'z')
                 buffer[i] = 'a' + (buffer[i] - 'a' + shift) % 26;
             else if (buffer[i] >= 'A' && buffer[i] <= 'Z')
