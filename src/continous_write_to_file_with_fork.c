@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
     freopen("myfile.txt", "a", stdout);
     pid_t fr = fork();
     system(argv[0]);
-    if (fr != 0) {
+    if (fr == 0) {
 		while (true) {
 			printf("%d\n", i);
 			i++;
