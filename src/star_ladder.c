@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main(int argc, char* argv[]) {
-	if (argc < 2) return 0;
     int i, j;
     int n = atoi(argv[1]);
     for (i = 0; i < n; i++) {
