@@ -5,7 +5,6 @@
 #include <sys/types.h>
 
 int main(int argc, char* argv[]) {
-	if (argc < 2) return 0;
     pid_t fr;
     freopen("test.txt", "a", stdout);
     argv[0][6] = '0';

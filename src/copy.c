@@ -4,7 +4,6 @@
 #include <unistd.h>
 
 int main(int argc, char* argv[]) {
-  if (argc < 2) return 0;
     int count = 100;
     int to_read;
     char buf[count];

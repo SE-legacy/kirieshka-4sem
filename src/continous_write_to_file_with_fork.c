@@ -9,7 +9,6 @@ void handler(int n) {
 }
 
 int main(int argc, char* argv[]) {
-    if (argc < 2) return 0;
     int i = 0;
     signal(SIGHUP, handler);
     freopen("myfile.txt", "a", stdout);
