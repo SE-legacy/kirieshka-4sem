@@ -38,7 +38,7 @@
 == Получение текущей даты
 #raw(read("../src/timestamp.c"), lang: "c", block: true)
 
-== Шифр Цезаря (probably doesn't work)
+== Шифр Цезаря
 #raw(read("../src/encode.c"), lang: "c", block: true)
 
 == Непрерывная запись в файл
